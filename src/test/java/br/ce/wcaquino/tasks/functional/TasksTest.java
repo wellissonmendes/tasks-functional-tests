@@ -60,7 +60,11 @@ public class TasksTest {
     @Test
     public void naoDeveSalvarTarefaSemDescricao() {
 
+
         WebDriver driver = acessarAplicacao();
+
+
+
         try {
                         driver.findElement(By.id("addTodo")).click();
             driver.findElement(By.id("dueDate")).sendKeys("21/10/2000");
